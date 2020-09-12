@@ -9,9 +9,11 @@ along using their own computers, and for reference after the workshop.
 The work is centred around building GNU Radio flowgraphs to analyze and
 demodulate deep-space probes IQ recordings.
 
-By now, this repository only holds some of the material, and the IQ recordings,
-which are recommended to be downloaded before the workshop. When the workshop
-date comes closer, more material will be added.
+This repository contains a number of GNU Radio companion `.grc` files called
+`handson_*.grc` that show the progress at different steps during the hands-on
+part of the workshop with GNU Radio companion.
+
+It also contains the PDF slides for the workshop in the folder `slides/`.
 
 ## Requirements
 
