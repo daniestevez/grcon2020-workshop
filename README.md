@@ -23,8 +23,13 @@ workshop by following [the instructions
 here](https://github.com/daniestevez/grcon2020-workshop/issues/1). Note you also
 need to download the IQ recordings as indicated below.
 
-Alternatively, a virtual machine that includes the requirements already installed will be
-provided soon.
+Alternatively, a virtual machine which consists of the UbuntuVM base VM plus all
+the requirements already installed can be downloaded
+[here](http://eala.destevez.net/~daniel/instant-satellites/instant-satellites-2.ova). Note
+that this is hosted on a home server, so download speed might not be great if
+there are many users downloading at once. In that case it is recommended to
+download the UbuntuVM base virtual machine and install the requirements by hand
+as indicated above.
 
 ## Requirements
 
