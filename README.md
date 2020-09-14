@@ -15,6 +15,17 @@ part of the workshop with GNU Radio companion.
 
 It also contains the PDF slides for the workshop in the folder `slides/`.
 
+## GNU Radio Virtual Machine
+
+Users of the [UbuntuVM](https://wiki.gnuradio.org/index.php/UbuntuVM) virtual
+machine that includes GNU Radio can install the required software for the
+workshop by following [the instructions
+here](https://github.com/daniestevez/grcon2020-workshop/issues/1). Note you also
+need to download the IQ recordings as indicated below.
+
+Alternatively, a virtual machine that includes the requirements already installed will be
+provided soon.
+
 ## Requirements
 
 The flowgraphs created in the workshop need the following:
