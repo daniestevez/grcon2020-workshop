@@ -55,6 +55,21 @@ The IQ recordings that will be used in this workshop can be downloaded
 placed in the `recordings/` folder inside this repository. Thes files total to nearly
 1GB, so attendees are recommended to download these before the workshop.
 
+## GNU Radio Logging
+
+If you have a freshly installed GNU Radio or are using a Virtual Machine with
+GNU Radio, then the default logging configuration will produce many debug
+messages with some of the flowgraphs. These messages can make
+`gnuradio-companion` run very slowly. It is recommended that you edit (or
+create) `~/.gnuradio/config.conf` and enter into this file:
+
+```
+[log]
+log_level = info
+```
+
+to reduce the number of debug messages.
+
 ## Licensing
 
 This material is released under the [CC BY 4.0
