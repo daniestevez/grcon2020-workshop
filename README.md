@@ -99,8 +99,11 @@ serve as a basis for people interested in studying these topics further.
 * [Recordings](http://gs1.to.ee/public_to117/Obs/Viljo/dsn/tianwen/)
   of Tianwen-1 made by Viljo Allik ES5PC with the 4.5m dish at Tartu University
   (Estonia).
+  See [this](https://destevez.net/2020/07/tianwen-1-telemetry-modulation-and-coding/)
+  and related blogposts.
 
 * [Emirates Mars Mission (Hope)](http://eala.destevez.net/~daniel/20200719_232945_99998.raw),
-  recorded by Paul Marsh M0EYT.
-
+  recorded by Paul Marsh M0EYT. The format is `int16` IQ at 99998sps. See the
+  [blog post](https://destevez.net/2020/07/decoding-emirates-mars-mission-hope/)
+  for more information.
 
