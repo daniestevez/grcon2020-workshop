@@ -83,7 +83,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 172.0]
+    coordinate: [848, 172.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -170,6 +170,25 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [448, 424.0]
+    rotation: 0
+    state: true
+- name: blocks_throttle_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [448, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -315,7 +334,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [496, 180.0]
+    coordinate: [656, 180.0]
     rotation: 0
     state: enabled
 
@@ -324,9 +343,10 @@ connections:
 - [analog_sig_source_x_0, '0', blocks_multiply_conjugate_cc_0, '1']
 - [blocks_complex_to_arg_0, '0', blocks_float_to_complex_1, '0']
 - [blocks_complex_to_arg_0, '0', hilbert_fc_0, '0']
-- [blocks_float_to_complex_0, '0', satellites_rms_agc_0, '0']
+- [blocks_float_to_complex_0, '0', blocks_throttle_0, '0']
 - [blocks_float_to_complex_1, '0', qtgui_freq_sink_x_0, '0']
 - [blocks_multiply_conjugate_cc_0, '0', qtgui_freq_sink_x_0, '1']
+- [blocks_throttle_0, '0', satellites_rms_agc_0, '0']
 - [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
 - [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
 - [hilbert_fc_0, '0', blocks_multiply_conjugate_cc_0, '0']

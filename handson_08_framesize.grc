@@ -143,7 +143,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 172.0]
+    coordinate: [760, 172.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -267,6 +267,25 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [552, 836.0]
+    rotation: 0
+    state: true
+- name: blocks_throttle_0
+  id: blocks_throttle
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    ignoretag: 'True'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samples_per_second: samp_rate
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [432, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -655,7 +674,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [496, 180.0]
+    coordinate: [624, 180.0]
     rotation: 0
     state: enabled
 
@@ -667,9 +686,10 @@ connections:
 - [blocks_complex_to_real_0, '0', digital_correlate_access_code_tag_xx_0, '0']
 - [blocks_complex_to_real_0, '0', fir_filter_xxx_1, '0']
 - [blocks_complex_to_real_0, '0', qtgui_time_sink_x_0, '0']
-- [blocks_float_to_complex_0, '0', satellites_rms_agc_0, '0']
+- [blocks_float_to_complex_0, '0', blocks_throttle_0, '0']
 - [blocks_multiply_conjugate_cc_0, '0', fir_filter_xxx_0, '0']
 - [blocks_multiply_const_vxx_0, '0', digital_correlate_access_code_tag_xx_0_0, '0']
+- [blocks_throttle_0, '0', satellites_rms_agc_0, '0']
 - [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
 - [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
 - [digital_correlate_access_code_tag_xx_0, '0', blocks_tag_debug_0, '0']
