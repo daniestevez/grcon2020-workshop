@@ -90,3 +90,17 @@ to reduce the number of debug messages.
 
 This material is released under the [CC BY 4.0
 license](https://creativecommons.org/licenses/by/4.0/).
+
+## More recordings
+
+Here is a list of recordings similar used to those used in the workshop. It can
+serve as a basis for people interested in studying these topics further.
+
+* [Recordings](http://gs1.to.ee/public_to117/Obs/Viljo/dsn/tianwen/)
+  of Tianwen-1 made by Viljo Allik ES5PC with the 4.5m dish at Tartu University
+  (Estonia).
+
+* [Emirates Mars Mission (Hope)](http://eala.destevez.net/~daniel/20200719_232945_99998.raw),
+  recorded by Paul Marsh M0EYT.
+
+
