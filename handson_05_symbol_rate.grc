@@ -147,7 +147,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    delay: '0'
+    delay: '1'
     maxoutbuf: '0'
     minoutbuf: '0'
     num_ports: '1'
