@@ -96,11 +96,16 @@ license](https://creativecommons.org/licenses/by/4.0/).
 Here is a list of recordings similar used to those used in the workshop. It can
 serve as a basis for people interested in studying these topics further.
 
-* [Recordings](http://gs1.to.ee/public_to117/Obs/Viljo/dsn/tianwen/)
-  of Tianwen-1 made by Viljo Allik ES5PC with the 4.5m dish at Tartu University
+* [Recordings of Tianwen-1](http://gs1.to.ee/public_to117/Obs/Viljo/dsn/tianwen/)
+  made by Viljo Allik ES5PC with the 4.5m dish at Tartu University
   (Estonia).
   See [this](https://destevez.net/2020/07/tianwen-1-telemetry-modulation-and-coding/)
   and related blogposts.
+
+* [Short recording of Tianwen-1](https://drive.google.com/file/d/1jcH1S0vUzzEplE5SU5VIxp2HClwHUDf8/view)
+  made by Wei Mingchuan BG2BHC with the 5.4m dish at Harbin Institute of Technology (China).
+  The format is `complex64` (i.e., `float32` IQ) at 3Msps.
+  Source: [this tweet](https://twitter.com/bg2bhc/status/1290650921349914624)
 
 * [Emirates Mars Mission (Hope)](http://eala.destevez.net/~daniel/20200719_232945_99998.raw),
   recorded by Paul Marsh M0EYT. The format is `int16` IQ at 99998sps. See the
