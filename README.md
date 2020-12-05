@@ -2,11 +2,14 @@
 
 This repository contains material for the workshop "Decoding interplanetary
 spacecraft" by Daniel Estévez at [GRCon20](https://www.gnuradio.org/grcon/grcon20/)
-on 14 September 2020. The material
-supplied here will be useful to attendees of the workshop who want to follow
+on 14 September 2020. The recording of the workshop session can be found
+in this [Youtube video](https://www.youtube.com/watch?v=RDbs6l4rMhs).
+
+The material
+supplied here was provided to attendees of the workshop to follow
 along using their own computers, and for reference after the workshop.
 
-The work is centred around building GNU Radio flowgraphs to analyze and
+The workshop is centred around building GNU Radio flowgraphs to analyze and
 demodulate deep-space probes IQ recordings.
 
 This repository contains a number of GNU Radio companion `.grc` files called
@@ -22,14 +25,6 @@ machine that includes GNU Radio can install the required software for the
 workshop by following [the instructions
 here](https://github.com/daniestevez/grcon2020-workshop/issues/1). Note you also
 need to download the IQ recordings as indicated below.
-
-Alternatively, a virtual machine which consists of the UbuntuVM base VM plus all
-the requirements already installed can be downloaded
-[here](http://eala.destevez.net/~daniel/instant-satellites/instant-satellites-2.ova). Note
-that this is hosted on a home server, so download speed might not be great if
-there are many users downloading at once. In that case it is recommended to
-download the UbuntuVM base virtual machine and install the requirements by hand
-as indicated above.
 
 ## Requirements
 
