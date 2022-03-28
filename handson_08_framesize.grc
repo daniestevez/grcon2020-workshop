@@ -1,6 +1,7 @@
 options:
   parameters:
     author: Daniel Estevez
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -41,7 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 172.0]
+    coordinate: [1224, 92.0]
     rotation: 0
     state: true
 - name: pll_bw
@@ -143,7 +144,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 172.0]
+    coordinate: [1272, 164.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -165,7 +166,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 380.0]
+    coordinate: [120, 384.0]
     rotation: 0
     state: true
 - name: blocks_complex_to_arg_0
@@ -181,7 +182,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [96, 328.0]
+    coordinate: [40, 316.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_real_0
@@ -197,7 +198,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [448, 568.0]
+    coordinate: [608, 716.0]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -213,7 +214,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 176.0]
+    coordinate: [384, 196.0]
     rotation: 0
     state: true
 - name: blocks_multiply_conjugate_cc_0
@@ -229,7 +230,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 328.0]
+    coordinate: [576, 332.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -247,7 +248,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [96, 900.0]
+    coordinate: [1136, 892.0]
     rotation: 0
     state: true
 - name: blocks_tag_debug_0
@@ -266,7 +267,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [552, 836.0]
+    coordinate: [2000, 716.0]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -285,7 +286,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [432, 188.0]
+    coordinate: [704, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -322,7 +323,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 788.0]
+    coordinate: [1624, 532.0]
     rotation: 0
     state: true
 - name: digital_correlate_access_code_tag_xx_0_0
@@ -341,7 +342,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 884.0]
+    coordinate: [1640, 836.0]
     rotation: 0
     state: true
 - name: digital_costas_loop_cc_0
@@ -359,7 +360,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [208, 568.0]
+    coordinate: [160, 604.0]
     rotation: 0
     state: true
 - name: digital_symbol_sync_xx_0
@@ -386,7 +387,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 284.0]
+    coordinate: [1320, 288.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_0
@@ -405,7 +406,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 332.0]
+    coordinate: [904, 312.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_1
@@ -424,7 +425,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 652.0]
+    coordinate: [1016, 744.0]
     rotation: 0
     state: true
 - name: hilbert_fc_0
@@ -437,12 +438,12 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     num_taps: '65'
-    win: firdes.WIN_HAMMING
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [280, 324.0]
+    coordinate: [368, 308.0]
     rotation: 0
     state: true
 - name: import_0
@@ -560,7 +561,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [448, 660.0]
+    coordinate: [600, 584.0]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -657,7 +658,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 564.0]
+    coordinate: [1376, 644.0]
     rotation: 0
     state: true
 - name: satellites_rms_agc_0
@@ -674,7 +675,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [624, 180.0]
+    coordinate: [984, 176.0]
     rotation: 0
     state: enabled
 
@@ -704,3 +705,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: v3.10.1.1-58-g637fcda4

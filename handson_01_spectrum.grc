@@ -1,6 +1,7 @@
 options:
   parameters:
     author: Daniel Estevez
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -41,7 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [192, 12.0]
+    coordinate: [264, 12.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -57,7 +58,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 176.0]
+    coordinate: [416, 196.0]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -76,7 +77,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 188.0]
+    coordinate: [800, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -131,7 +132,7 @@ blocks:
     fc: '0'
     fftsize: '4096'
     freqhalf: 'True'
-    grid: 'False'
+    grid: 'True'
     gui_hint: ''
     label: Relative Gain
     label1: ''
@@ -149,6 +150,7 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '1'
+    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -167,14 +169,14 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '-65'
     ymin: '-110'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [688, 192.0]
+    coordinate: [1152, 164.0]
     rotation: 0
     state: true
 
@@ -186,3 +188,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: v3.10.1.1-58-g637fcda4

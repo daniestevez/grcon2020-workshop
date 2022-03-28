@@ -1,6 +1,7 @@
 options:
   parameters:
     author: Daniel Estevez
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -83,7 +84,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [880, 172.0]
+    coordinate: [1280, 164.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -121,7 +122,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [96, 328.0]
+    coordinate: [432, 284.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -137,7 +138,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 176.0]
+    coordinate: [376, 196.0]
     rotation: 0
     state: true
 - name: blocks_multiply_conjugate_cc_0
@@ -153,7 +154,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 328.0]
+    coordinate: [1096, 340.0]
     rotation: 0
     state: true
 - name: blocks_multiply_xx_0
@@ -171,7 +172,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 392.0]
+    coordinate: [1520, 340.0]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -190,7 +191,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 188.0]
+    coordinate: [696, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -221,12 +222,12 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     num_taps: '65'
-    win: firdes.WIN_HAMMING
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [280, 324.0]
+    coordinate: [792, 300.0]
     rotation: 0
     state: true
 - name: import_0
@@ -258,14 +259,14 @@ blocks:
     samp_rate: samp_rate
     type: fir_filter_ccf
     width: samp_rate/200*0.1
-    win: firdes.WIN_HAMMING
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
     coordinate: [504, 516.0]
     rotation: 0
-    state: true
+    state: enabled
 - name: qtgui_freq_sink_x_0
   id: qtgui_freq_sink_x
   parameters:
@@ -318,6 +319,7 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '2'
+    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -336,14 +338,14 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '0'
     ymin: '-60'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [872, 344.0]
+    coordinate: [1864, 244.0]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0
@@ -398,6 +400,7 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '1'
+    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -416,7 +419,7 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '0'
     ymin: '-60'
   states:
@@ -425,7 +428,7 @@ blocks:
     bus_structure: null
     coordinate: [832, 568.0]
     rotation: 0
-    state: true
+    state: enabled
 - name: satellites_rms_agc_0
   id: satellites_rms_agc
   parameters:
@@ -440,7 +443,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [672, 180.0]
+    coordinate: [984, 176.0]
     rotation: 0
     state: enabled
 
@@ -463,3 +466,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: v3.10.1.1-58-g637fcda4
