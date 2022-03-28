@@ -28,13 +28,19 @@ need to download the IQ recordings as indicated below.
 
 ## Requirements
 
-The flowgraphs created in the workshop need the following:
+The workshop was originally done with GNU Radio 3.8 and needed the following.
 
 * [GNU Radio 3.8](https://www.gnuradio.org/)
 * [gr-satellites](https://github.com/daniestevez/gr-satellites) (any version
-  since v3.0.0 is fine)
+  since v3.0.0 is fine for GNU Radio 3.8)
 * [gr-dslwp](https://github.com/daniestevez/gr-dslwp/tree/maint38), branch
   `maint38`
+
+The flowgraphs that were used in the workshop can now be found in the
+`maint-3.8` branch. The flowgraphs have now been updated to GNU Radio 3.10 in
+the `master` branch. GNU Radio 3.9 should probably work without problems with
+the `maint-3.8` flowgraphs. A version of gr-satellites and gr-dslwp that matches
+the version of GNU Radio should be used.
 
 There is also a very brief part of the workshop that uses a Jupyter
 notebook. This needs:
