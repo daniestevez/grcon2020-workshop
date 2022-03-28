@@ -1,6 +1,7 @@
 options:
   parameters:
     author: Daniel Estevez
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -41,7 +42,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [960, 172.0]
+    coordinate: [1232, 92.0]
     rotation: 0
     state: true
 - name: pll_bw
@@ -143,7 +144,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [696, 172.0]
+    coordinate: [1008, 164.0]
     rotation: 0
     state: enabled
 - name: analog_sig_source_x_0
@@ -165,7 +166,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 380.0]
+    coordinate: [248, 416.0]
     rotation: 0
     state: true
 - name: blocks_complex_to_arg_0
@@ -197,7 +198,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [448, 568.0]
+    coordinate: [624, 572.0]
     rotation: 0
     state: true
 - name: blocks_file_sink_0
@@ -215,7 +216,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1040, 996.0]
+    coordinate: [1712, 972.0]
     rotation: 0
     state: true
 - name: blocks_float_to_complex_0
@@ -231,7 +232,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 176.0]
+    coordinate: [384, 196.0]
     rotation: 0
     state: true
 - name: blocks_multiply_conjugate_cc_0
@@ -247,7 +248,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 328.0]
+    coordinate: [704, 356.0]
     rotation: 0
     state: true
 - name: blocks_multiply_const_vxx_0
@@ -266,23 +267,6 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [96, 900.0]
-    rotation: 0
-    state: true
-- name: blocks_pdu_to_tagged_stream_0
-  id: blocks_pdu_to_tagged_stream
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    tag: packet_len
-    type: byte
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [776, 1012.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -319,7 +303,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 788.0]
+    coordinate: [960, 628.0]
     rotation: 0
     state: true
 - name: digital_correlate_access_code_tag_xx_0_0
@@ -338,7 +322,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 884.0]
+    coordinate: [472, 876.0]
     rotation: 0
     state: true
 - name: digital_costas_loop_cc_0
@@ -356,7 +340,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [208, 568.0]
+    coordinate: [152, 612.0]
     rotation: 0
     state: true
 - name: digital_symbol_sync_xx_0
@@ -383,7 +367,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [896, 284.0]
+    coordinate: [1480, 296.0]
     rotation: 0
     state: true
 - name: dslwp_ccsds_pseudo_randomizer_0
@@ -399,7 +383,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [760, 860.0]
+    coordinate: [1240, 772.0]
     rotation: 0
     state: true
 - name: dslwp_ccsds_turbo_decode_0
@@ -420,7 +404,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1000, 820.0]
+    coordinate: [1576, 720.0]
     rotation: 0
     state: true
 - name: dslwp_frame_spliter_f_0
@@ -437,7 +421,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [512, 796.0]
+    coordinate: [872, 776.0]
     rotation: 0
     state: true
 - name: dslwp_frame_spliter_f_0_0
@@ -454,7 +438,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [512, 892.0]
+    coordinate: [920, 928.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_0
@@ -473,7 +457,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [656, 332.0]
+    coordinate: [1016, 336.0]
     rotation: 0
     state: true
 - name: fir_filter_xxx_1
@@ -492,7 +476,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [712, 652.0]
+    coordinate: [1000, 504.0]
     rotation: 0
     state: true
 - name: hilbert_fc_0
@@ -505,12 +489,12 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     num_taps: '65'
-    win: firdes.WIN_HAMMING
+    win: window.WIN_HAMMING
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [280, 324.0]
+    coordinate: [456, 332.0]
     rotation: 0
     state: true
 - name: import_0
@@ -537,6 +521,23 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [464, 12.0]
+    rotation: 0
+    state: true
+- name: pdu_pdu_to_tagged_stream_0
+  id: pdu_pdu_to_tagged_stream
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    tag: packet_len
+    type: byte
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1296, 956.0]
     rotation: 0
     state: true
 - name: qtgui_const_sink_x_0
@@ -628,7 +629,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [448, 660.0]
+    coordinate: [608, 640.0]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0
@@ -725,7 +726,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [976, 564.0]
+    coordinate: [1416, 556.0]
     rotation: 0
     state: true
 - name: satellites_rms_agc_0
@@ -742,7 +743,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [496, 180.0]
+    coordinate: [712, 176.0]
     rotation: 0
     state: enabled
 
@@ -757,7 +758,6 @@ connections:
 - [blocks_float_to_complex_0, '0', satellites_rms_agc_0, '0']
 - [blocks_multiply_conjugate_cc_0, '0', fir_filter_xxx_0, '0']
 - [blocks_multiply_const_vxx_0, '0', digital_correlate_access_code_tag_xx_0_0, '0']
-- [blocks_pdu_to_tagged_stream_0, '0', blocks_file_sink_0, '0']
 - [blocks_wavfile_source_0, '0', blocks_float_to_complex_0, '0']
 - [blocks_wavfile_source_0, '1', blocks_float_to_complex_0, '1']
 - [digital_correlate_access_code_tag_xx_0, '0', dslwp_frame_spliter_f_0, '0']
@@ -766,13 +766,15 @@ connections:
 - [digital_costas_loop_cc_0, '0', qtgui_const_sink_x_0, '0']
 - [digital_symbol_sync_xx_0, '0', digital_costas_loop_cc_0, '0']
 - [dslwp_ccsds_pseudo_randomizer_0, out, dslwp_ccsds_turbo_decode_0, in]
-- [dslwp_ccsds_turbo_decode_0, out, blocks_pdu_to_tagged_stream_0, pdus]
+- [dslwp_ccsds_turbo_decode_0, out, pdu_pdu_to_tagged_stream_0, pdus]
 - [dslwp_frame_spliter_f_0, out, dslwp_ccsds_pseudo_randomizer_0, in]
 - [dslwp_frame_spliter_f_0_0, out, dslwp_ccsds_pseudo_randomizer_0, in]
 - [fir_filter_xxx_0, '0', digital_symbol_sync_xx_0, '0']
 - [fir_filter_xxx_1, '0', qtgui_time_sink_x_0, '1']
 - [hilbert_fc_0, '0', blocks_multiply_conjugate_cc_0, '0']
+- [pdu_pdu_to_tagged_stream_0, '0', blocks_file_sink_0, '0']
 - [satellites_rms_agc_0, '0', analog_pll_carriertracking_cc_0, '0']
 
 metadata:
   file_format: 1
+  grc_version: v3.10.1.1-58-g637fcda4

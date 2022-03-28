@@ -1,6 +1,7 @@
 options:
   parameters:
     author: Daniel Estevez
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -83,7 +84,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [832, 172.0]
+    coordinate: [1176, 4.0]
     rotation: 0
     state: enabled
 - name: blocks_complex_to_float_0
@@ -99,7 +100,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [872, 344.0]
+    coordinate: [1752, 76.0]
     rotation: 0
     state: enabled
 - name: blocks_float_to_complex_0
@@ -115,7 +116,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [264, 176.0]
+    coordinate: [384, 196.0]
     rotation: 0
     state: true
 - name: blocks_throttle_0
@@ -134,7 +135,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [456, 188.0]
+    coordinate: [728, 188.0]
     rotation: 0
     state: true
 - name: blocks_wavfile_source_0
@@ -220,6 +221,7 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '2'
+    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -238,14 +240,14 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '-15'
     ymin: '-60'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1088, 40.0]
+    coordinate: [1440, 164.0]
     rotation: 0
     state: true
 - name: qtgui_freq_sink_x_0_0
@@ -300,6 +302,7 @@ blocks:
     minoutbuf: '0'
     name: '""'
     nconnections: '2'
+    norm_window: 'False'
     showports: 'False'
     tr_chan: '0'
     tr_level: '0.0'
@@ -318,14 +321,14 @@ blocks:
     width7: '1'
     width8: '1'
     width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
+    wintype: window.WIN_BLACKMAN_hARRIS
     ymax: '-15'
     ymin: '-60'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1080, 344.0]
+    coordinate: [1904, 212.0]
     rotation: 0
     state: enabled
 - name: satellites_rms_agc_0
@@ -342,7 +345,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [672, 180.0]
+    coordinate: [1032, 176.0]
     rotation: 0
     state: enabled
 
@@ -360,3 +363,4 @@ connections:
 
 metadata:
   file_format: 1
+  grc_version: v3.10.1.1-58-g637fcda4
